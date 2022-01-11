@@ -13,7 +13,7 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		try {
+		
 			System.out.println("Enter account data:");
 			System.out.print("Numer: ");
 			int number = sc.nextInt();
@@ -29,6 +29,8 @@ public class Program {
 			System.out.println();
 			System.out.print("Enter amount for withdraw: ");
 			double amount = sc.nextDouble();
+			
+		try {	
 			account.withdraw(amount);
 			System.out.println("New Balance: " + account.getBalance());
 		} 
